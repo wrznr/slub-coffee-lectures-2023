@@ -428,16 +428,28 @@ den Nacht begegnen könnte, in Gnaden bewahren
 
 # Texterkennung
 
+<center>
+<img src="img/nbg_grid.png" width="400px" />
+</center>
+
 .cols[
-.fourty[
-- Schritt 3: Zeichenerkennung (Prinzip)
-    + Erkennung auf Zeilenebene
-    + Ausgabe der Zeichen mit höchster Wahrscheinlichkeit
-]
 .sixty[
-<p style="margin-top:-20px">
-<img src="https://files.gitter.im/5b97ae51d73408ce4fa7b1ee/LYSx/lstm-fraktur-arrows.png" width="650px" style="transform:rotate(90deg);"/>
-</p>
+- Tabellen mit fester Anzahl Zeilen  
+  und mit variabler Anzahl Spalten
+- Pixelspalten als Vektorfolge
+  + charakteristische Abfolge pro Zeichen
++ Vektor-Übergangswahrscheinlichkeiten = **trainierbares Modell**
+]
+.fourty[
+<center>
+<img src="img/detail_mask.png" width="190px" />
+</center>
+<center>
+<p>↓</p>
+</center>
+<center>
+<img src="img/pixel_cols.png" width="190px" />
+</center>
 ]
 ]
 
